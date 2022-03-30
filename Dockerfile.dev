@@ -6,6 +6,7 @@ COPY package.json .
 
 RUN npm install
 
+# 删掉不影响，但是最好复制，如果没有挂载的情况下也可以继续使用
 COPY . .
 
 CMD ["npm", "run", "start"]
